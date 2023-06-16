@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--strong-cyan: hsl(172, 67%, 45%);
+--very-dark-cyan: hsl(183, 100%, 15%);
+--dark-grayish-cyan: hsl(186, 14%, 43%);
+--Grayish-cyan: hsl(184, 14%, 56%);
+--Light-grayish-cyan: hsl(185, 41%, 84%);
+--Very-light-grayish-cyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* input[type="number"] {
+  -moz-appearance: textfield;
+} */
+body{
+    font-family: 'Space Mono';
+    background-color: var(--Light-grayish-cyan);
+    color: var(--very-dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+main{
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    height: 380px;
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 20px;
+}
+.aside{
+    background-color: var(--very-dark-cyan);
+    color: var(--White);
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title{
+    font-weight: bold;
+}
+.inputContain{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.inputContainCheck{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-cyan);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+input{
+    border: hidden;
+    text-align: end;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    background-color: var(--Very-light-grayish-cyan);
+}
+.btn input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.check{
+    position: absolute;
+    visibility: hidden;
+}
+.billInput{
+    height: 40px;
+    width: 100%;
+}
+.textInputContain{
+    display: flex;
+    justify-content: space-between;
+}
+.cant{
+    color: red;
+}
