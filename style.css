@@ -81,6 +81,10 @@ main{
     font-size: 16px;
     font-weight: bold;
 }
+.btn input:checked ~ p{
+    background-color: var(--strong-cyan); 
+    color: var(--very-dark-cyan);
+}
 .btn p:hover{
    background-color: var(--strong-cyan); 
    color: var(--very-dark-cyan);
@@ -103,7 +107,7 @@ input{
     font-weight: bold;
     background-color: var(--Very-light-grayish-cyan);
 }
-.btn input{
+.custom{
     width: 100%;
     height: 100%;
     border-radius: 5px;
